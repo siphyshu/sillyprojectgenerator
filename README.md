@@ -1,3 +1,3 @@
-# [Fairy Comment Generator](https://hanamemon.github.io/fairycommentgenerator/)
+# [Silly Project Generatro](https://siphyshu.github.io/sillyprojectgenerator/)
 
-🧚‍♂️ Generate fairy comments to ruin your self esteem
+🥴 Generate silly, dumb and pretty useless project ideas because why not!
