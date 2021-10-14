@@ -1,2 +1,2 @@
-# dumbprojectgenerator
-🥴 dumb and useless project ideas generator
+# sillyprojectgenerator
+🥴 silly and slightly useless project ideas generator
