@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Generate a fairy comment" />
+  <link rel="icon" type="image/x-icon" href="hankey.png" />
+  <title>silly project generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <meta property="og:title" content="Fairy Comment Generator" />
+  <meta property="og:description" content="🕺" />
+  <meta property="og:url" content="Fairy Comment Generator" />
+</head>
+
+<body>
+  <h1 id="phrase">
+    <span id="idea">make a silly project generator</span>
+    <span id="emoji">👀</span>
+  </h1>
+
+  <a href="javascript:void(0)" id="regenerate-button" class="button">get another project idea 💻</a>
+
+  <p>
+    totally made with 🩸 💦 💧 by siphy<br />
+    inspired by <a href="https://make.weirdflex.me/" target="_blank">kat huang</a><br />
+  </p>
+
+  <script>
+    //fairy comment generator
+    var ideas = [
+      "a reminder that forgets to remind",
+      "an alarm app that sings lullabies",
+      "calculator but with emojis instead of operators",
+      "an antivirus which tries to intercept viruses",
+      "a GPS but in gordon ramsay's voice",
+      "car simulator in which you score by crashing"
+    ],
+      emojis = [
+        "✨",
+        "🕺",
+        "📺",
+        "🌱",
+        "🌸",
+        "🧚🏼‍♀️",
+        "🥰",
+        "🌈",
+        "⭐️",
+        "👑",
+        "💫",
+        "⭐️",
+        "🌟",
+        "💕",
+        "💓",
+        "🛒",
+        "🦋",
+      ];
+
+    var num = -1;
+    var btn = document.getElementById("regenerate-button");
+    var weird = document.getElementById("idea"),
+      flex = document.getElementById("emoji");
+
+    btn.addEventListener("click", function () {
+      if (num == ideas.length - 1) {
+        num = 0;
+      }
+
+      else {
+        num += 1;
+      }
+      generateVariation();
+    });
+
+    function generateVariation() {
+      replaceWithSynonym(idea, ideas);
+      replaceWithEmoji(emoji, emojis);
+    }
+
+    function replaceWithSynonym(word, synonymList) {
+      word.innerText = synonymList[num];
+    }
+
+    replaceWithEmoji();
+    function replaceWithEmoji(emote, emojiList) {
+      emote.innerText =
+        emojiList[Math.floor(Math.random() * emojiList.length)];
+    }
+  </script>
+</body>
+
+</html>
