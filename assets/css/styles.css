@@ -15,9 +15,11 @@ body {
   padding-bottom: 2rem;
   margin: 5%;
   /* background-image: url("https://media.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif"); */
+  /* background-image: url("../../images/background.gif"); */
   background-image: url("https://media.giphy.com/media/2tNvsKkc0qFdNhJmKk/giphy.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 h1 {

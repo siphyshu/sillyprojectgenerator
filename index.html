@@ -5,15 +5,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="🕺💃 A silly and rather useless project ideas generator because there are already loads of brilliant ideas out there in the world." />
-  <link rel="icon" type="image/x-icon" href="hankey.png" />
+  <meta name="description"
+    content="🕺💃 A silly and rather useless project ideas generator because there are already loads of brilliant ideas out there in the world." />
+  <link rel="icon" type="image/x-icon" href="images/hankey.png" />
   <title>silly project generator</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <meta property="og:title" content="Fairy Comment Generator" />
-  <meta property="og:description" content="🕺💃 A silly and rather useless project ideas generator because there are already loads of brilliant ideas out there in the world." />
+  <meta property="og:description"
+    content="🕺💃 A silly and rather useless project ideas generator because there are already loads of brilliant ideas out there in the world." />
   <meta property="og:url" content="Fairy Comment Generator" />
 </head>
 
@@ -30,77 +32,7 @@
     inspired by <a href="https://make.weirdflex.me/" target="_blank">kat huang</a><br />
   </p>
 
-  <script>
-    //fairy comment generator
-    var ideas = [
-      "a reminder that forgets to remind",
-      "an alarm app that sings lullabies",
-      "calculator but with emojis instead of operators",
-      "an antivirus which tries to intercept viruses",
-      "a GPS but in gordon ramsay's voice",
-      "car simulator in which you score by crashing",
-      "a music player that plays gibberish",
-      "youtube mod that plays ads instead of videos",
-      "a vpn service that only serves locally",
-      "translator app that always messes up the grammar",
-      "a text to speech converter but it mumbles",
-      "a motivational app but instead it shows depressing quotes",
-      "twitter bot which tweets everytime you go to poop",
-      "a dictionary but in standard galactic alphabets",
-      "a voice assistant except that it doesn't listen to you",
-      "a coin flip simulator but it doesn't land back"
-    ],
-      emojis = [
-        "✨",
-        "🕺",
-        "📺",
-        "🌱",
-        "🌸",
-        "🧚🏼‍♀️",
-        "🥰",
-        "🌈",
-        "⭐️",
-        "👑",
-        "💫",
-        "⭐️",
-        "🌟",
-        "💕",
-        "💓",
-        "🛒",
-        "🦋",
-      ];
-
-    var num = -1;
-    var btn = document.getElementById("regenerate-button");
-    var weird = document.getElementById("idea"),
-      flex = document.getElementById("emoji");
-
-    btn.addEventListener("click", function () {
-      if (num == ideas.length - 1) {
-        num = 0;
-      }
-
-      else {
-        num += 1;
-      }
-      generateVariation();
-    });
-
-    function generateVariation() {
-      replaceWithSynonym(idea, ideas);
-      replaceWithEmoji(emoji, emojis);
-    }
-
-    function replaceWithSynonym(word, synonymList) {
-      word.innerText = synonymList[num];
-    }
-
-    replaceWithEmoji();
-    function replaceWithEmoji(emote, emojiList) {
-      emote.innerText =
-        emojiList[Math.floor(Math.random() * emojiList.length)];
-    }
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
